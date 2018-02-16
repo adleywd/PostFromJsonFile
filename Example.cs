@@ -37,7 +37,6 @@ class Program
         {
             HttpResponseMessage response = await client.PostAsJsonAsync(
                 "api/XXXX", data);
-            response.EnsureSuccessStatusCode();
 
             return response.StatusCode.ToString();
         }
